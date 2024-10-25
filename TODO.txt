@@ -1,0 +1,65 @@
+- [ ]  `:Rocks install` できない
+  - [ ]  accelerated-jk-nvim.lua
+  - [ ]  barbar-nvim.lua
+  - [ ]  buffer-reopen-nvim.lua
+  - [ ]  calendar-vim.lua
+  - [ ]  chezmoi-vim.lua
+  - [ ]  codecompanion-nvim.lua
+  - [ ]  context-menu-nvim.lua
+  - [ ]  copilotchat-nvim.lua
+  - [ ]  crates-nvim.lua
+  - [ ]  dotfyle-metadata-nvim.lua
+  - [ ]  eskk-vim.lua
+  - [ ]  flagmode-nvim.lua
+  - [ ]  garbage-day-nvim.lua
+  - [ ]  gitgraph-nvim.lua
+  - [ ]  haunt-nvim.lua
+  - [ ]  hawtkeys-nvim.lua
+  - [ ]  huez-nvim.lua
+  - [ ]  human-rights-nvim.lua
+  - [ ]  keyseer-nvim.lua
+  - [ ]  lazydocker-nvim.lua
+  - [ ]  lazysql-nvim.lua
+  - [ ]  luminate-nvim.lua
+  - [ ]  markdown-toggle-nvim.lua
+  - [ ]  mkdir-nvim.lua
+  - [ ]  moody-nvim.lua
+  - [ ]  neominimap-nvim.lua
+  - [ ]  num-utils-nvim.lua
+  - [ ]  nvim-ghost-nvim.lua
+  - [ ]  nvim-hlslens.lua
+  - [ ]  nvim-navbuddy.lua
+  - [ ]  obsidian-kensaku-nvim.lua
+  - [ ]  oil-git-status-nvim.lua
+  - [ ]  satellite-nvim.lua
+  - [ ]  sidebar-nvim.lua
+  - [ ]  template-nvim.lua
+  - [ ]  toggle-nvim.lua
+  - [ ]  transparent-nvim.lua
+  - [ ]  typos-nvim.lua
+  - [ ]  wezterm-nvim.lua
+- [ ]  なんか面倒
+  - [ ]  hop-nvim.lua
+    - 名前解決
+  - [ ]  nvim-cmp.lua
+    - 他の選択肢
+  - rocks-treesitter
+    - [ ]  nvim-treesitter.lua
+    - [ ]  nvim-ts-context-commentstring.lua
+  - [ ]  orgmode.lua
+    - [ ]  neorg
+  - [ ]  translate-nvim.lua
+    - 他の選択肢
+- [ ]  Vim Scripts
+  - [ ]  migemo-search-vim.lua
+  - [ ]  vim-ambiwidth.lua
+  - [ ]  vim-cargo-make.lua
+  - [ ]  vim-illuminate.lua
+  - [ ]  vim-kitty.lua
+  - [ ]  vim-quickrun.lua
+  - [ ]  vim-teraterm.lua
+  - [ ]  vimdoc-ja.lua
+- [ ]  denops
+  - [ ]  https://github.com/Omochice/dps-translate-vim
+  - [ ]  https://github.com/tadashi-aikawa/silhouette.nvim/
+  - [ ]  https://github.com/lambdalisue/vim-fall
