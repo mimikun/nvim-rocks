@@ -32,7 +32,6 @@ alpha-nvim = "scm"
 "lspsaga.nvim" = "scm"
 luasnip = "2.3.0"
 "lualine.nvim" = "scm"
-"markview.nvim" = "24.0.0"
 "mason.nvim" = "1.10.0"
 neogit = "1.0.0"
 "no-neck-pain.nvim" = "2.0.6"
@@ -52,7 +51,6 @@ nvim-surround = "2.1.5"
 "oil.nvim" = "2.12.2"
 "overseer.nvim" = "1.4.0"
 "package-info.nvim" = "2.0"
-"render-markdown.nvim" = "7.4.0"
 rustaceanvim = "5.13.0"
 "screenkey.nvim" = "2.2.1"
 "smart-open.nvim" = "scm"
@@ -76,6 +74,14 @@ git = "lambdalisue/vim-fall"
 
 [plugins."dial.nvim"]
 git = "monaqa/dial.nvim"
+
+[plugins."render-markdown.nvim"]
+version = "7.4.0"
+opt = true
+
+[plugins."markview.nvim"]
+version = "24.0.0"
+opt = true
 
 #[plugins."rocks-spec-template.nvim"]
 # NOTE: rocks.nvim RockSpec
