@@ -11,77 +11,315 @@ path = "~/ghq/github.com/mimikun/dev-plugins"
 "rocks-treesitter.nvim" = "1.1.3"
 "rocks-config.nvim" = "3.0.0"
 "rocks-dev.nvim" = "1.7.0"
-"2048.nvim" = "2.8.2"
-alpha-nvim = "scm"
-"ccc.nvim" = "1.6.0"
-"comment.nvim" = "0.8.0"
-"copilot.lua" = "scm"
-"diffview.nvim" = "scm"
-"dressing.nvim" = "3.0.0"
-"fidget.nvim" = "1.4.1"
-"gitsigns.nvim" = "0.9.0"
-"glow.nvim" = "0.2.0"
-"grapple.nvim" = "0.30.0"
-"hardtime.nvim" = "scm"
-"helpview.nvim" = "1.1.0"
-"hover.nvim" = "scm"
-"indent-blankline.nvim" = "3.8.2"
-"lazydev.nvim" = "1.8.0"
-"lazygit.nvim" = "scm"
-"legendary.nvim" = "2.13.11"
-"lspsaga.nvim" = "scm"
-luasnip = "2.3.0"
-"lualine.nvim" = "scm"
-"mason.nvim" = "1.10.0"
-neogit = "1.0.0"
-"no-neck-pain.nvim" = "2.0.6"
-"noice.nvim" = "4.5.2"
-"none-ls.nvim" = "scm"
-nvim-autopairs = "scm"
-nvim-bqf = "1.1.1"
-nvim-cursorline = "scm"
-nvim-dap-ui = "4.0.0"
-nvim-lspconfig = "1.0.0"
-nvim-navic = "scm"
-nvim-notify = "3.14.0"
-nvim-surround = "2.1.5"
-"nvim-tree.lua" = "1.6.0"
-"obsidian.nvim" = "3.9.0"
-"octo.nvim" = "scm"
-"oil.nvim" = "2.12.2"
-"overseer.nvim" = "1.4.0"
-"package-info.nvim" = "2.0"
-rustaceanvim = "5.13.0"
-"screenkey.nvim" = "2.2.1"
-"smart-open.nvim" = "scm"
-"smoothcursor.nvim" = "scm"
-"sqlite.lua" = "1.2.2"
-"telescope.nvim" = "scm"
-"todo-comments.nvim" = "1.4.0"
-treesj = "scm"
-"trouble.nvim" = "3.6.0"
-"which-key.nvim" = "3.13.3"
-"zen-mode.nvim" = "1.4.0"
 
-[plugins."denops.vim"]
-git = "vim-denops/denops.vim"
+"plenary.nvim" = "scm"
+nvim-web-devicons = "0.100"
 
-[plugins.skkeleton]
-git = "vim-skk/skkeleton"
+[plugins."vim-toml"]
+git = "cespare/vim-toml"
 
-[plugins."vim-fall"]
-git = "lambdalisue/vim-fall"
+[plugins."vim-duckscript"]
+git = "nastevens/vim-duckscript"
+
+#---------------------------------------------
+
+[plugins."2048.nvim"]
+version = "2.8.2"
+cmd = "Play2048"
+
+[plugins."accelerated-jk.nvim"]
+git = "rainbowhxch/accelerated-jk.nvim"
+event = "BufRead"
+
+[plugins.alpha-nvim]
+version = "scm"
+cmd = "Alpha"
+event = "VimEnter"
+
+[plugins."barbar.nvim"]
+git = "romgrk/barbar.nvim"
+event = "BufEnter"
+cmd = [
+    "BufferPrevious",
+    "BufferNext",
+    "BufferMovePrevious",
+    "BufferMoveNext",
+    "BufferGoto",
+    "BufferLast",
+    "BufferPin",
+    "BufferClose",
+    "BufferRestore",
+    "BufferWipeout",
+    "BufferCloseAllButCurrent",
+    "BufferCloseAllButVisible",
+    "BufferCloseAllButPinned",
+    "BufferCloseAllButCurrentOrPinned",
+    "BufferCloseBuffersLeft",
+    "BufferCloseBuffersRight",
+    "BufferPick",
+    "BufferPickDelete",
+    "BufferOrderByBufferNumber",
+    "BufferOrderByName",
+    "BufferOrderByDirectory",
+    "BufferOrderByLanguage",
+    "BufferOrderByWindowNumber",
+    "BarbarEnable",
+    "BarbarDisable",
+]
+
+[plugins."buffer-reopen.nvim"]
+git = "iamyoki/buffer-reopen.nvim"
+cmd = "BufferHistory"
+
+[plugins."ccc.nvim"]
+version = "1.6.0"
+cmd = [
+  "CccPick",
+  "CccConvert",
+  "CccHighlighterEnable",
+  "CccHighlighterDisable",
+  "CccHighlighterToggle",
+]
+event = "BufEnter"
+
+[plugins."comment.nvim"]
+version = "0.8.0"
+
+[plugins."copilot.lua"]
+version = "scm"
 
 [plugins."dial.nvim"]
 git = "monaqa/dial.nvim"
+
+[plugins."diffview.nvim"]
+version = "scm"
+
+[plugins."dressing.nvim"]
+version = "3.0.0"
+
+[plugins."fidget.nvim"]
+version = "1.4.1"
+
+[plugins."gitsigns.nvim"]
+version = "0.9.0"
+
+[plugins."glow.nvim"]
+version = "0.2.0"
+cmd = "Glow"
+
+[plugins."grapple.nvim"]
+version = "0.30.0"
+
+[plugins."hardtime.nvim"]
+version = "scm"
+
+[plugins."helpview.nvim"]
+version = "1.1.0"
+
+[plugins."hover.nvim"]
+version = "scm"
+
+[plugins."indent-blankline.nvim"]
+version = "3.8.2"
+
+[plugins."lazydev.nvim"]
+version = "1.8.0"
+
+[plugins."lazygit.nvim"]
+version = "scm"
+
+[plugins."legendary.nvim"]
+version = "2.13.11"
+
+[plugins."lspsaga.nvim"]
+version = "scm"
+
+[plugins."lualine.nvim"]
+version = "scm"
+
+[plugins.luasnip]
+version = "2.3.0"
+
+[plugins."markview.nvim"]
+version = "24.0.0"
+opt = true
+
+[plugins."mason.nvim"]
+version = "1.10.0"
+
+[plugins.neogit]
+version = "1.0.0"
+
+[plugins."no-neck-pain.nvim"]
+version = "2.0.6"
+
+[plugins."noice.nvim"]
+version = "4.5.2"
+
+[plugins."none-ls.nvim"]
+version = "scm"
+
+[plugins."num-utils.nvim"]
+git = "mimikun/num-utils.nvim"
+cmd = [
+  "NumToHex",
+  "NumToBinary",
+  "NumToOctal",
+  "NumToDecimal",
+]
+
+[plugins.nvim-autopairs]
+version = "scm"
+event = "InsertEnter"
+
+[plugins.nvim-bqf]
+version = "1.1.1"
+
+[plugins.nvim-cursorline]
+version = "scm"
+
+[plugins.nvim-dap-ui]
+version = "4.0.0"
+
+[plugins.nvim-lspconfig]
+version = "1.0.0"
+
+[plugins.nvim-navic]
+version = "scm"
+
+[plugins.nvim-notify]
+version = "3.14.0"
+
+[plugins.nvim-surround]
+version = "2.1.5"
+
+[plugins."nvim-tree.lua"]
+version = "1.6.0"
+
+[plugins."obsidian.nvim"]
+version = "3.9.0"
+
+[plugins."octo.nvim"]
+version = "scm"
+
+[plugins."oil.nvim"]
+version = "2.12.2"
+
+[plugins."overseer.nvim"]
+version = "1.4.0"
+
+[plugins."package-info.nvim"]
+version = "2.0"
 
 [plugins."render-markdown.nvim"]
 version = "7.4.0"
 opt = true
 
-[plugins."markview.nvim"]
-version = "24.0.0"
+[plugins.rustaceanvim]
+version = "5.13.0"
+
+[plugins."screenkey.nvim"]
+version = "2.2.1"
+
+[plugins."smart-open.nvim"]
+version = "scm"
+
+[plugins."smoothcursor.nvim"]
+version = "scm"
+
+[plugins."sqlite.lua"]
+version = "1.2.2"
+
+[plugins."telescope.nvim"]
+version = "scm"
+
+[plugins."todo-comments.nvim"]
+version = "1.4.0"
+
+[plugins.treesj]
+version = "scm"
+
+[plugins."trouble.nvim"]
+version = "3.6.0"
+
+[plugins."which-key.nvim"]
+version = "3.13.3"
+
+[plugins."zen-mode.nvim"]
+version = "1.4.0"
+
+#--------------------------------------------------------------------
+
+# denops plugins
+[plugins."denops.vim"]
+git = "vim-denops/denops.vim"
+
+[plugins."dps-translate-vim"]
+git = "Omochice/dps-translate-vim"
+cmd = [
+  "Translate",
+  "TranslateJoin",
+]
+
+[plugins."silhouette.nvim"]
+git = "tadashi-aikawa/silhouette.nvim"
+ft = "markdown"
+cmd = [
+  "SilhouetteInsertTasks",
+  "SilhouetteMoveToProgress",
+  "SilhouetteShowTaskDates",
+]
+
+[plugins.skkeleton]
+git = "vim-skk/skkeleton"
+
+# Vim Script plugins
+[plugins."calendar-vim"]
+git= "mattn/calendar-vim"
+cmd = "Calendar"
+
+[plugins."chezmoi.vim"]
+git = "alker0/chezmoi.vim"
+
+[plugins."eskk.vim"]
+git = "vim-skk/eskk.vim"
+cmd = [
+    "EskkMap",
+    "EskkUnmap",
+    "EskkForgetRegisteredWords",
+    "EskkUpdateDictionary",
+    "EskkFixDictionary",
+    "EskkReload",
+    "EskkEnable",
+    "EskkDisable",
+    "EskkToggle",
+]
+
+[plugins."migemo-search.vim"]
+git = "rhysd/migemo-search.vim"
 opt = true
+
+[plugins."vim-ambiwidth"]
+git = "rbtnn/vim-ambiwidth"
+
+[plugins."vim-cargo-make"]
+git = "nastevens/vim-cargo-make"
+ft = "cargo-make"
+
+[plugins."vim-kitty"]
+git = "fladson/vim-kitty"
+ft = "kitty"
+
+[plugins."vim-quickrun"]
+git = "thinca/vim-quickrun"
+cmd = "QuickRun"
+
+[plugins."vim-teraterm"]
+git = "k-takata/vim-teraterm"
+ft = "ttl"
+
+[plugins."vimdoc-ja"]
+git = "vim-jp/vimdoc-ja"
 
 #[plugins."rocks-spec-template.nvim"]
 # NOTE: rocks.nvim RockSpec

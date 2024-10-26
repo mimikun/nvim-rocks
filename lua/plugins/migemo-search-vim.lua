@@ -1,3 +1,4 @@
+--[[
 --- enabled check
 --- 1. if there are no human rights
 --- 2. and if executable cmigemo command
@@ -15,17 +16,6 @@ local keys = {
         desc = "Hiragana de kensaku",
     },
 }
+]]
 
----@type LazySpec
-local spec = {
-    "rhysd/migemo-search.vim",
-    --lazy = false,
-    keys = keys,
-    config = function()
-        vim.cmd([[cnoremap <expr><CR> migemosearch#replace_search_word()."\<CR>"]])
-    end,
-    cond = enabled,
-    enabled = enabled,
-}
-
-return spec
+vim.cmd([[cnoremap <expr><CR> migemosearch#replace_search_word()."\<CR>"]])

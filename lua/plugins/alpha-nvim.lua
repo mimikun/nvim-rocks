@@ -1,17 +1,3 @@
----@type LazySpec[]
-local dependencies = {
-    "nvim-tree/nvim-web-devicons",
-    "nvim-lua/plenary.nvim",
-}
-
----@type LazySpec
-local spec = {
-    "goolord/alpha-nvim",
-    --lazy = false,
-    cmd = "Alpha",
-    event = "VimEnter",
-    dependencies = dependencies,
-    config = function()
         local alpha = require("alpha")
         local theta = require("alpha.themes.theta")
         local button = require("alpha.themes.dashboard").button
@@ -40,8 +26,3 @@ local spec = {
         }
 
         alpha.setup(theta.config)
-    end,
-    --cond = false,
-}
-
-return spec
