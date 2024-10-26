@@ -122,7 +122,7 @@ local skkeleton_opts = {
 
 vim.fn["skkeleton#config"] = skkeleton_opts
 vim.fn["skkeleton#initialize"]()
-vim.notify("skkeleton initialized!", vim.log.levels.DEBUG)
+--vim.notify("skkeleton initialized!", vim.log.levels.DEBUG)
 
 vim.keymap.set("n", "<C-j>", "<Plug>(skkeleton-toggle)")
 vim.keymap.set("i", "<C-j>", "<Plug>(skkeleton-toggle)")
