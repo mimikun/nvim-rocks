@@ -90,6 +90,10 @@ event = "BufEnter"
 #git = "numToStr/Comment.nvim"
 version = "0.8.0"
 
+[plugins."context-menu.nvim"]
+git = "LintaoAmons/context-menu.nvim"
+cmd = "ContextMenu"
+
 [plugins."copilot.lua"]
 git = "uga-rosa/ccc.nvim"
 #version = "scm"
