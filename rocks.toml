@@ -492,4 +492,5 @@ ft = "ttl"
 
 [plugins."vimdoc-ja"]
 git = "vim-jp/vimdoc-ja"
+keys = { lhs = "h", mode = "c", desc = "open [H]elp" }
 
