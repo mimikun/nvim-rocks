@@ -1,9 +1,3 @@
----@type LazySpec[]
-local dependencies = {
-    "nvim-treesitter/nvim-treesitter",
-    "nvim-tree/nvim-web-devicons",
-}
-
 ---@type table
 local opts = {
     -- https://nvimdev.github.io/lspsaga/codeaction/
@@ -25,15 +19,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "nvimdev/lspsaga.nvim",
-    --lazy = false,
-    cmd = "Lspsaga",
-    event = "LspAttach",
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("lspsaga").setup(opts)

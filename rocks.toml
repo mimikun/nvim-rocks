@@ -276,7 +276,10 @@ cmd = [
 
 
 [plugins."lspsaga.nvim"]
+#git = "nvimdev/lspsaga.nvim"
 version = "scm"
+cmd = "Lspsaga"
+event = "LspAttach"
 
 [plugins."lualine.nvim"]
 version = "scm"
