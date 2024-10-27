@@ -1,18 +1,4 @@
 ---@type table
-local cmds = {
-    "TodoQuickFix",
-    "TodoLocList",
-    "TodoTelescope",
-}
-
----@type LazySpec[]
-local dependencies = {
-    "nvim-telescope/telescope.nvim",
-    "nvim-lua/plenary.nvim",
-    "folke/trouble.nvim",
-}
-
----@type table
 local opts = {
     keywords = {
         FIX = { icon = "󰃤 " },
@@ -52,15 +38,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "folke/todo-comments.nvim",
-    --lazy = false,
-    cmd = cmds,
-    event = "BufEnter",
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("todo-comments").setup(opts)

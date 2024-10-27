@@ -244,7 +244,14 @@ cmd = "Telescope"
 #keys = require("plugins.configs.telescope-nvim.keys")
 
 [plugins."todo-comments.nvim"]
+#git = "folke/todo-comments.nvim"
 version = "1.4.0"
+cmd = [
+  "TodoQuickFix",
+  "TodoLocList",
+  "TodoTelescope",
+]
+event = "BufEnter"
 
 [plugins."nvimdev/template.nvim"]
 git = "nvimdev/template.nvim"
