@@ -98,6 +98,11 @@ cmd = "ContextMenu"
 git = "uga-rosa/ccc.nvim"
 #version = "scm"
 
+[plugins."crates.nvim"]
+git = "saecki/crates.nvim"
+cmd = "Crates"
+event = "BufRead Cargo.toml"
+
 [plugins."dial.nvim"]
 git = "monaqa/dial.nvim"
 
