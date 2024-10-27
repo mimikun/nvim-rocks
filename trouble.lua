@@ -45,16 +45,3 @@ local opts = {
         },
     },
 }
-
----@type LazySpec
-local spec = {
-    "folke/trouble.nvim",
-    --lazy = false,
-    cmd = "Trouble",
-    keys = require("plugins.configs.trouble.keys"),
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = opts,
-    --cond = false,
-}
-
-return spec

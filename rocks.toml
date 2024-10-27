@@ -246,7 +246,10 @@ version = "scm"
 
 # TODO:
 [plugins."trouble.nvim"]
+#git = "folke/trouble.nvim"
 version = "3.6.0"
+cmd = "Trouble"
+#keys = require("plugins.configs.trouble.keys"),
 
 [plugins."which-key.nvim"]
 #git = "folke/which-key.nvim"
