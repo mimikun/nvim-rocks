@@ -16,6 +16,7 @@ path = "~/ghq/github.com/mimikun/dev-plugins"
 nvim-web-devicons = "0.100"
 "mini.icons" = "0.14.0"
 "nui.nvim" = "0.3.0"
+"toggleterm.nvim" = "2.12.0"
 
 [plugins."vim-toml"]
 git = "cespare/vim-toml"
@@ -240,9 +241,30 @@ event = "BufEnter"
 git = "jokajak/keyseer.nvim"
 cmd = "KeySeer"
 
-# TODO:
+[plugins."lazydocker.nvim"]
+git = "mgierada/lazydocker.nvim"
+cmd = "Lazydocker"
+event = "BufRead"
+config = true
+
 [plugins."lazygit.nvim"]
+#git = "kdheepak/lazygit.nvim"
 version = "scm"
+cmds = [
+  "LazyGit",
+  "LazyGitConfig",
+  "LazyGitCurrentFile",
+  "LazyGitFilter",
+  "LazyGitFilterCurrentFile",
+]
+keys = { lhs = "<leader>lg", rhs = "<cmd>LazyGit<cr>", desc = "LazyGit" }
+
+[plugins."lazysql.nvim"]
+git = "LostbBlizzard/lazysql.nvim"
+cmd = "LazySql"
+config = true
+
+# TODO:
 
 [plugins."legendary.nvim"]
 version = "2.13.11"
