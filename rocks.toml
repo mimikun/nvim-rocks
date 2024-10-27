@@ -266,6 +266,14 @@ cmd = "Template"
 git = "uga-rosa/translate.nvim"
 cmd = "TranslateJa"
 
+[plugins."transparent.nvim"]
+git = "xiyaowong/transparent.nvim"
+cmd = [
+  "TransparentEnable",
+  "TransparentDisable",
+  "TransparentToggle",
+]
+
 [plugins.treesj]
 #git = "Wansmer/treesj"
 version = "scm"
