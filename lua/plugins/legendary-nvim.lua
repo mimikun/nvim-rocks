@@ -1,15 +1,4 @@
 ---@type table
-local cmds = {
-    "Legendary",
-    "LegendaryRepeat",
-}
-
----@type LazySpec[]
-local dependencies = {
-    "kkharji/sqlite.lua",
-}
-
----@type table
 local opts = {
     select_prompt = " legendary.nvim ",
     col_separator_char = "│",
@@ -30,15 +19,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "mrjones2014/legendary.nvim",
-    lazy = false,
-    cmd = cmds,
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-    priority = 10000,
-}
-
-return spec
+require("legendary").setup(opts)

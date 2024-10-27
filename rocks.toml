@@ -267,7 +267,13 @@ config = true
 # TODO:
 
 [plugins."legendary.nvim"]
+#git = "mrjones2014/legendary.nvim"
 version = "2.13.11"
+cmd = [
+  "Legendary",
+  "LegendaryRepeat",
+]
+
 
 [plugins."lspsaga.nvim"]
 version = "scm"
