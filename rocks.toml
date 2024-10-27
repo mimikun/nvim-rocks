@@ -236,10 +236,13 @@ version = "scm"
 #git = "kkharji/sqlite.lua"
 version = "1.2.2"
 
-[plugins."telescope.nvim"]
-version = "scm"
-
 # TODO:
+[plugins."telescope.nvim"]
+#git = "nvim-telescope/telescope.nvim"
+version = "scm"
+cmd = "Telescope"
+#keys = require("plugins.configs.telescope-nvim.keys")
+
 [plugins."todo-comments.nvim"]
 version = "1.4.0"
 
