@@ -124,6 +124,14 @@ cmd = [
   "DiffviewLog",
 ]
 
+[plugins."dotfyle-metadata.nvim"]
+git = "creativenull/dotfyle-metadata.nvim"
+cmd = [
+  "DotfyleGenerate",
+  "DotfyleOpen",
+]
+config = true
+
 [plugins."dressing.nvim"]
 version = "3.0.0"
 
