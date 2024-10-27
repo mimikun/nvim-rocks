@@ -292,6 +292,17 @@ cmd = "Trouble"
 [plugins."typos.nvim"]
 git = "poljar/typos.nvim"
 
+[plugins."vim-illuminate"]
+git = "RRethy/vim-illuminate"
+cmd = [
+  "IlluminatePause",
+  "IlluminateResume",
+  "IlluminateToggle",
+  "IlluminatePauseBuf",
+  "IlluminateResumeBuf",
+  "IlluminateToggleBuf",
+]
+
 [plugins."which-key.nvim"]
 #git = "folke/which-key.nvim"
 version = "3.13.3"
