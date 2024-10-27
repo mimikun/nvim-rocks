@@ -253,6 +253,11 @@ cmd = [
 ]
 event = "BufEnter"
 
+[plugins."toggle.nvim"]
+git = "gregorias/toggle.nvim"
+#version = "2.0"
+#event = "VeryLazy"
+
 [plugins."nvimdev/template.nvim"]
 git = "nvimdev/template.nvim"
 cmd = "Template"

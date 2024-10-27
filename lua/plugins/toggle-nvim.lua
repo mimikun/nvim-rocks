@@ -8,14 +8,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "gregorias/toggle.nvim",
-    version = "2.0",
-    --lazy = false,
-    event = "VeryLazy",
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("toggle").setup(opts)
