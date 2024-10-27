@@ -264,8 +264,6 @@ git = "LostbBlizzard/lazysql.nvim"
 cmd = "LazySql"
 config = true
 
-# TODO:
-
 [plugins."legendary.nvim"]
 #git = "mrjones2014/legendary.nvim"
 version = "2.13.11"
@@ -281,8 +279,12 @@ version = "scm"
 cmd = "Lspsaga"
 event = "LspAttach"
 
+# TODO:
+
 [plugins."lualine.nvim"]
+#git = "nvim-lualine/lualine.nvim"
 version = "scm"
+event = "BufEnter"
 
 [plugins.luasnip]
 version = "2.3.0"
@@ -332,6 +334,7 @@ version = "4.0.0"
 version = "1.0.0"
 
 [plugins.nvim-navic]
+#git = "SmiteshP/nvim-navic"
 version = "scm"
 
 [plugins.nvim-notify]

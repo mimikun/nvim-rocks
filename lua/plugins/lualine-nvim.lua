@@ -22,21 +22,3 @@ local opts = {
     winbar = {},
 }
 
----@type LazySpec[]
-local dependencies = {
-    "nvim-tree/nvim-web-devicons",
-    "lewis6991/gitsigns.nvim",
-    "SmiteshP/nvim-navic",
-}
-
----@type LazySpec
-local spec = {
-    "nvim-lualine/lualine.nvim",
-    --lazy = false,
-    event = "BufEnter",
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
