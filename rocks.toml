@@ -154,6 +154,13 @@ git = "zeioth/garbage-day.nvim"
 #event = "VeryLazy"
 config = true
 
+[plugins."gitgraph.nvim"]
+git = "isakbm/gitgraph.nvim"
+cmd = "GitGraph"
+keys = { lhs = "<leader>gl", rhs = 'lua require("gitgraph").draw({}, { all = true, max_count = 5000 }', mode = "n", desc = "GitGraph - Draw"}
+
+# TODO: its
+
 [plugins."gitsigns.nvim"]
 version = "0.9.0"
 
@@ -285,7 +292,6 @@ version = "scm"
 #git = "kkharji/sqlite.lua"
 version = "1.2.2"
 
-# TODO:
 [plugins."telescope.nvim"]
 #git = "nvim-telescope/telescope.nvim"
 version = "scm"

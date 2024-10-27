@@ -1,15 +1,3 @@
----@type LazyKeysSpec[]
-local keys = {
-    {
-        "<leader>gl",
-        function()
-            require("gitgraph").draw({}, { all = true, max_count = 5000 })
-        end,
-        mode = "n",
-        desc = "GitGraph - Draw",
-    },
-}
-
 ---@type I.GGConfig
 local opts = {
     symbols = {
@@ -54,23 +42,9 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "isakbm/gitgraph.nvim",
-    --lazy = false,
-    cmd = "GitGraph",
-    keys = keys,
-    dependencies = { "sindrets/diffview.nvim" },
-    config = function()
-        local gitgraph = require("gitgraph")
-        gitgraph.setup(opts)
-
-        -- Define user command
-        vim.api.nvim_create_user_command("GitGraph", function()
-            gitgraph.draw({}, { all = true, max_count = 5000 })
-        end, {})
-    end,
-    --cond = false,
-}
-
-return spec
+local gitgraph = require("gitgraph")
+gitgraph.setup(opts)
+-- Define user command
+vim.api.nvim_create_user_command("GitGraph", function()
+    gitgraph.draw({}, { all = true, max_count = 5000 })
+end, {})
