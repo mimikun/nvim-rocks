@@ -29,15 +29,4 @@ local opts = {
         },
     },
 }
-
----@type LazySpec
-local spec = {
-    "j-hui/fidget.nvim",
-    lazy = false,
-    cmd = "Fidget",
-    --event = "VeryLazy",
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("fidget").setup(opts)
