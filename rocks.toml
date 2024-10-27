@@ -243,6 +243,10 @@ version = "scm"
 [plugins."todo-comments.nvim"]
 version = "1.4.0"
 
+[plugins."nvimdev/template.nvim"]
+git = "nvimdev/template.nvim"
+cmd = "Template"
+
 [plugins.treesj]
 #git = "Wansmer/treesj"
 version = "scm"
