@@ -164,14 +164,17 @@ keys = { lhs = "<leader>gl", rhs = 'lua require("gitgraph").draw({}, { all = tru
 version = "0.9.0"
 event = "VimEnter"
 
-# TODO: its
-
 [plugins."glow.nvim"]
 version = "0.2.0"
 cmd = "Glow"
 
 [plugins."grapple.nvim"]
+#git = "cbochs/grapple.nvim"
 version = "0.30.0"
+cmd = "Grapple"
+event = ["BufReadPost", "BufNewFile"]
+
+# TODO: its
 
 [plugins."hardtime.nvim"]
 version = "scm"
