@@ -149,6 +149,11 @@ cmd = [
   "FlagDeactivate",
 ]
 
+[plugins."garbage-day.nvim"]
+git = "zeioth/garbage-day.nvim"
+#event = "VeryLazy"
+config = true
+
 [plugins."gitsigns.nvim"]
 version = "0.9.0"
 
