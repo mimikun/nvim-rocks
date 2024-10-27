@@ -238,18 +238,25 @@ version = "1.2.2"
 [plugins."telescope.nvim"]
 version = "scm"
 
+# TODO:
 [plugins."todo-comments.nvim"]
 version = "1.4.0"
 
 [plugins.treesj]
+#git = "Wansmer/treesj"
 version = "scm"
+cmd = [
+  "TSJToggle",
+  "TSJSplit",
+  "TSJoin",
+]
+opt = true
 
 [plugins."trouble.nvim"]
 #git = "folke/trouble.nvim"
 version = "3.6.0"
 cmd = "Trouble"
 
-# TODO:
 [plugins."which-key.nvim"]
 #git = "folke/which-key.nvim"
 version = "3.13.3"
