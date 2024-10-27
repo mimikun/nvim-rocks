@@ -1,3 +1,5 @@
+vim.opt.termguicolors = true
+
 ---@type ccc.Options
 local opts = {
     highlighter = {
@@ -6,5 +8,4 @@ local opts = {
     },
 }
 
-vim.opt.termguicolors = true
 require("ccc").setup(opts)
