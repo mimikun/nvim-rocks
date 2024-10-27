@@ -91,7 +91,8 @@ event = "BufEnter"
 version = "0.8.0"
 
 [plugins."copilot.lua"]
-version = "scm"
+git = "uga-rosa/ccc.nvim"
+#version = "scm"
 
 [plugins."dial.nvim"]
 git = "monaqa/dial.nvim"
