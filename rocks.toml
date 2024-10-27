@@ -303,6 +303,11 @@ cmd = [
   "IlluminateToggleBuf",
 ]
 
+[plugins."wezterm.nvim"]
+git = "willothy/wezterm.nvim"
+dev = false
+cmd = "WeztermSpawn"
+
 [plugins."which-key.nvim"]
 #git = "folke/which-key.nvim"
 version = "3.13.3"
