@@ -202,10 +202,13 @@ cmd = [
   "HawtkeysDupes",
 ]
 
-# TODO: its
-
 [plugins."helpview.nvim"]
+#git = "OXY2DEV/helpview.nvim"
 version = "1.1.0"
+ft = "help"
+cmd = "Helpview"
+
+# TODO: its
 
 [plugins."hover.nvim"]
 version = "scm"
