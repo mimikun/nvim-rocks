@@ -14,6 +14,7 @@ path = "~/ghq/github.com/mimikun/dev-plugins"
 
 "plenary.nvim" = "scm"
 nvim-web-devicons = "0.100"
+"mini.icons" = "0.14.0"
 
 [plugins."vim-toml"]
 git = "cespare/vim-toml"
@@ -23,8 +24,6 @@ git = "nastevens/vim-duckscript"
 
 [plugins."nvim-ts-context-commentstring"]
 git = "JoosepAlviste/nvim-ts-context-commentstring"
-
-#"echasnovski/mini.icons",
 
 #---------------------------------------------
 
@@ -245,6 +244,7 @@ version = "1.4.0"
 [plugins.treesj]
 version = "scm"
 
+# TODO:
 [plugins."trouble.nvim"]
 version = "3.6.0"
 
