@@ -15,6 +15,7 @@ path = "~/ghq/github.com/mimikun/dev-plugins"
 "plenary.nvim" = "scm"
 nvim-web-devicons = "0.100"
 "mini.icons" = "0.14.0"
+"nui.nvim" = "0.3.0"
 
 [plugins."vim-toml"]
 git = "cespare/vim-toml"
@@ -179,7 +180,21 @@ event = ["BufReadPost", "BufNewFile"]
 # TODO: its
 
 [plugins."hardtime.nvim"]
+#git = "m4xshen/hardtime.nvim",
 version = "scm"
+cmd = "Hardtime"
+
+[plugins."haunt.nvim"]
+git = "adigitoleo/haunt.nvim"
+# NOTE: official repository
+# "https://git.sr.ht/~adigitoleo/haunt.nvim"
+cmd = [
+  "HauntTerm",
+  "HauntHelp",
+  "HauntMan",
+  "HauntLs",
+  "HauntReset",
+]
 
 [plugins."helpview.nvim"]
 version = "1.1.0"
