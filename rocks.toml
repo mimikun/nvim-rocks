@@ -177,8 +177,6 @@ version = "0.30.0"
 cmd = "Grapple"
 event = ["BufReadPost", "BufNewFile"]
 
-# TODO: its
-
 [plugins."hardtime.nvim"]
 #git = "m4xshen/hardtime.nvim",
 version = "scm"
@@ -195,6 +193,16 @@ cmd = [
   "HauntLs",
   "HauntReset",
 ]
+
+[plugins."hawtkeys.nvim"]
+git = "tris203/hawtkeys.nvim"
+cmd = [
+  "Hawtkeys",
+  "HawtkeysAll",
+  "HawtkeysDupes",
+]
+
+# TODO: its
 
 [plugins."helpview.nvim"]
 version = "1.1.0"
