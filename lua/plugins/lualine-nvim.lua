@@ -22,3 +22,4 @@ local opts = {
     winbar = {},
 }
 
+require("lualine").setup(opts)
