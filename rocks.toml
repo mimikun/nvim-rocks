@@ -341,7 +341,6 @@ version = "1.2.2"
 #git = "nvim-telescope/telescope.nvim"
 version = "scm"
 cmd = "Telescope"
-#keys = require("plugins.configs.telescope-nvim.keys")
 
 [plugins."todo-comments.nvim"]
 #git = "folke/todo-comments.nvim"
