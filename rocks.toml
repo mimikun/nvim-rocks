@@ -208,13 +208,15 @@ version = "1.1.0"
 ft = "help"
 cmd = "Helpview"
 
-# TODO: its
-
 [plugins."hover.nvim"]
+#git = "lewis6991/hover.nvim"
 version = "scm"
+#event = "VeryLazy"
 
 [plugins."indent-blankline.nvim"]
 version = "3.8.2"
+
+# TODO: its
 
 [plugins."lazydev.nvim"]
 version = "1.8.0"
