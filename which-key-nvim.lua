@@ -1,20 +1,3 @@
----@type LazyKeysSpec[]
-local keys = {
-    {
-        "<leader>?",
-        function()
-            require("which-key").show({ global = false })
-        end,
-        desc = "Buffer Local Keymaps (which-key)",
-    },
-}
-
----@type LazySpec[]
-local dependencies = {
-    "nvim-tree/nvim-web-devicons",
-    "echasnovski/mini.icons",
-}
-
 ---@type wk.Opts
 local opts = {
     preset = "modern",
@@ -67,17 +50,3 @@ local opts = {
         bt = {},
     },
 }
-
----@type LazySpec
-local spec = {
-    "folke/which-key.nvim",
-    --lazy = false,
-    cmd = "WhichKey",
-    keys = keys,
-    event = "VeryLazy",
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec

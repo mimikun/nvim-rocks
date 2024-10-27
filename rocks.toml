@@ -24,6 +24,8 @@ git = "nastevens/vim-duckscript"
 [plugins."nvim-ts-context-commentstring"]
 git = "JoosepAlviste/nvim-ts-context-commentstring"
 
+#"echasnovski/mini.icons",
+
 #---------------------------------------------
 
 [plugins."2048.nvim"]
@@ -247,7 +249,11 @@ version = "scm"
 version = "3.6.0"
 
 [plugins."which-key.nvim"]
+#git = "folke/which-key.nvim"
 version = "3.13.3"
+cmd = "WhichKey"
+#event = "VeryLazy"
+keys = { lhs = "<leader>?", rhs = 'lua require("which-key").show({ global = false })', desc = "Buffer Local Keymaps (which-key)" }
 
 [plugins."zen-mode.nvim"]
 #git = "folke/zen-mode.nvim"
