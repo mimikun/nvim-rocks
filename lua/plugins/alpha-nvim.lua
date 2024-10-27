@@ -4,7 +4,7 @@ local button = require("alpha.themes.dashboard").button
 
 theta.header.val = require("utils.bannars").get("covid_19").Japan
 theta.buttons.val = {
-    { type = "text",    val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
+    { type = "text", val = "Quick links", opts = { hl = "SpecialComment", position = "center" } },
     { type = "padding", val = 1 },
     button("e", "󰝒  New file", "<cmd>ene<CR>"),
     button("f", "󰱼  File search", "<cmd>Telescope smart_open<CR>"),

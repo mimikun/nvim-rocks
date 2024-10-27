@@ -1,6 +1,6 @@
 ---@type table
 local opts = {
-        -- TODO: it
+    -- TODO: it
 }
 
-require('typos').setup(opts)
+require("typos").setup(opts)
