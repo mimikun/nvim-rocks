@@ -28,6 +28,7 @@ git = "JoosepAlviste/nvim-ts-context-commentstring"
 #---------------------------------------------
 
 [plugins."2048.nvim"]
+#git = "NStefan002/2048.nvim"
 version = "2.8.2"
 cmd = "Play2048"
 
@@ -36,6 +37,7 @@ git = "rainbowhxch/accelerated-jk.nvim"
 event = "BufRead"
 
 [plugins.alpha-nvim]
+#git = "goolord/alpha-nvim"
 version = "scm"
 cmd = "Alpha"
 event = "VimEnter"
@@ -76,7 +78,8 @@ git = "iamyoki/buffer-reopen.nvim"
 cmd = "BufferHistory"
 
 [plugins."ccc.nvim"]
-version = "1.6.0"
+git = "uga-rosa/ccc.nvim"
+#version = "1.6.0"
 cmd = [
   "CccPick",
   "CccConvert",
@@ -94,8 +97,7 @@ version = "0.8.0"
 git = "LintaoAmons/context-menu.nvim"
 cmd = "ContextMenu"
 
-[plugins."copilot.lua"]
-git = "uga-rosa/ccc.nvim"
+#[plugins."copilot.lua"]
 #version = "scm"
 
 [plugins."crates.nvim"]
