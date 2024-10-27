@@ -1,14 +1,4 @@
 ---@type table
-local cmds = {
-    "IBLEnable",
-    "IBLDisable",
-    "IBLToggle",
-    "IBLEnableScope",
-    "IBLDisableScope",
-    "IBLToggleScope",
-}
-
----@type table
 local opts = {
     indent = {
         char = "▎",
@@ -66,15 +56,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    --lazy = false,
-    cmd = cmds,
-    event = "BufEnter",
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("indent_blankline").setup(opts)

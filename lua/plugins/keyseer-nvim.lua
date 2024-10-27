@@ -24,15 +24,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "jokajak/keyseer.nvim",
-    version = false,
-    --lazy = false,
-    cmd = "KeySeer",
-    opts = opts,
-    --cond = false,
-    --enabled = false,
-}
-
-return spec
+require("keyseer").setup(opts)

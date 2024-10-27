@@ -224,13 +224,23 @@ cmd = [
 ]
 
 [plugins."indent-blankline.nvim"]
+#git = "lukas-reineke/indent-blankline.nvim"
 version = "3.8.2"
+cmd = [
+  "IBLEnable",
+  "IBLDisable",
+  "IBLToggle",
+  "IBLEnableScope",
+  "IBLDisableScope",
+  "IBLToggleScope",
+]
+event = "BufEnter"
 
-# TODO: its
+[plugins."keyseer.nvim"]
+git = "jokajak/keyseer.nvim"
+cmd = "KeySeer"
 
-[plugins."lazydev.nvim"]
-version = "1.8.0"
-
+# TODO:
 [plugins."lazygit.nvim"]
 version = "scm"
 
