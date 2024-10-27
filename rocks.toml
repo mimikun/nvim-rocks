@@ -141,6 +141,14 @@ version = "3.0.0"
 version = "1.4.1"
 cmd = "Fidget"
 
+[plugins."flagmode.nvim"]
+git = "prichrd/flagmode.nvim"
+cmd = [
+  "FlagToggle",
+  "FlagActivate",
+  "FlagDeactivate",
+]
+
 [plugins."gitsigns.nvim"]
 version = "0.9.0"
 

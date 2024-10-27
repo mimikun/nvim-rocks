@@ -1,16 +1,3 @@
----@type table
-local cmds = {
-    "FlagToggle",
-    "FlagActivate",
-    "FlagDeactivate",
-}
-
----@type LazySpec
-local spec = {
-    "prichrd/flagmode.nvim",
-    --lazy = false,
-    cmd = cmds,
-    config = function()
         local flagmode = require("flagmode")
 
         flagmode.register("relative_number", {
@@ -21,8 +8,4 @@ local spec = {
                 vim.opt.relativenumber = false
             end,
         })
-    end,
-    --cond = false,
-}
 
-return spec
