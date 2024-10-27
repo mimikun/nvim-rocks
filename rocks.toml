@@ -133,6 +133,7 @@ cmd = [
 config = true
 
 [plugins."dressing.nvim"]
+#git = "stevearc/dressing.nvim"
 version = "3.0.0"
 
 [plugins."fidget.nvim"]
