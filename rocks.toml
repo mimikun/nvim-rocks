@@ -105,6 +105,11 @@ event = "BufRead Cargo.toml"
 
 [plugins."dial.nvim"]
 git = "monaqa/dial.nvim"
+cmd = [
+  "DialIncrement",
+  "DialDecrement",
+]
+#event = "VeryLazy"
 
 [plugins."diffview.nvim"]
 version = "scm"
