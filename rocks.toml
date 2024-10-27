@@ -262,6 +262,10 @@ git = "gregorias/toggle.nvim"
 git = "nvimdev/template.nvim"
 cmd = "Template"
 
+[plugins."translate.nvim"]
+git = "uga-rosa/translate.nvim"
+cmd = "TranslateJa"
+
 [plugins.treesj]
 #git = "Wansmer/treesj"
 version = "scm"
