@@ -21,6 +21,9 @@ git = "cespare/vim-toml"
 [plugins."vim-duckscript"]
 git = "nastevens/vim-duckscript"
 
+[plugins."nvim-ts-context-commentstring"]
+git = "JoosepAlviste/nvim-ts-context-commentstring"
+
 #---------------------------------------------
 
 [plugins."2048.nvim"]
@@ -83,6 +86,7 @@ cmd = [
 event = "BufEnter"
 
 [plugins."comment.nvim"]
+#git = "numToStr/Comment.nvim"
 version = "0.8.0"
 
 [plugins."copilot.lua"]
