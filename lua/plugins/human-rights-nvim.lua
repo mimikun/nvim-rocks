@@ -1,12 +1,4 @@
 ---@type table
-local cmds = {
-    "ShowCpu",
-    "ShowMemory",
-    "ShowParallelism",
-    "ShowDisk",
-}
-
----@type table
 local opts = {
     cpu = {
         "Ryzen 9 3900X",
@@ -22,14 +14,4 @@ local opts = {
     media_type = "SSD",
 }
 
----@type LazySpec
-local spec = {
-    "mimikun/human-rights.nvim",
-    dev = true,
-    --lazy = false,
-    cmd = cmds,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("human-rights").setup(opts)

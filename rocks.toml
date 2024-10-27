@@ -213,6 +213,16 @@ cmd = "Helpview"
 version = "scm"
 #event = "VeryLazy"
 
+[plugins."human-rights.nvim"]
+git = "mimikun/human-rights.nvim"
+dev = true
+cmd = [
+  "ShowCpu",
+  "ShowMemory",
+  "ShowParallelism",
+  "ShowDisk",
+]
+
 [plugins."indent-blankline.nvim"]
 version = "3.8.2"
 
