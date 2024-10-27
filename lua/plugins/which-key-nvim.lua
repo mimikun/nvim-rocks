@@ -50,3 +50,5 @@ local opts = {
         bt = {},
     },
 }
+
+require("which-key").setup(opts)

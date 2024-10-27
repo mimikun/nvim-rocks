@@ -244,13 +244,12 @@ version = "1.4.0"
 [plugins.treesj]
 version = "scm"
 
-# TODO:
 [plugins."trouble.nvim"]
 #git = "folke/trouble.nvim"
 version = "3.6.0"
 cmd = "Trouble"
-#keys = require("plugins.configs.trouble.keys"),
 
+# TODO:
 [plugins."which-key.nvim"]
 #git = "folke/which-key.nvim"
 version = "3.13.3"
