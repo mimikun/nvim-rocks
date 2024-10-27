@@ -112,7 +112,17 @@ cmd = [
 #event = "VeryLazy"
 
 [plugins."diffview.nvim"]
+#git = "sindrets/diffview.nvim",
 version = "scm"
+cmd = [
+  "DiffviewOpen",
+  "DiffviewFileHistory",
+  "DiffviewClose",
+  "DiffviewToggleFiles",
+  "DiffviewFocusFiles",
+  "DiffviewRefresh",
+  "DiffviewLog",
+]
 
 [plugins."dressing.nvim"]
 version = "3.0.0"
