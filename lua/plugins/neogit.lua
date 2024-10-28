@@ -1,10 +1,3 @@
----@type LazySpec[]
-local dependencies = {
-    "nvim-lua/plenary.nvim",
-    "sindrets/diffview.nvim",
-    "nvim-telescope/telescope.nvim",
-}
-
 ---@type table
 local opts = {
     graph_style = "unicode",
@@ -25,14 +18,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "NeogitOrg/neogit",
-    --lazy = false,
-    cmd = "Neogit",
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("neogit").setup(opts)

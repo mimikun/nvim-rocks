@@ -1,17 +1,4 @@
 ---@type table
-local cmds = {
-    "SmoothCursorStart",
-    "SmoothCursorStop",
-    "SmoothCursorStatus",
-    "SmoothCursorToggle",
-    "SmoothCursorFancyToggle",
-    "SmoothCursorFancyOn",
-    "SmoothCursorFancyOff",
-    "SmoothCursorDeleteSigns",
-    "SmoothCursorJump",
-}
-
----@type table
 local opts = {
     -- Cursor shape (requires Nerd Font). Disabled in fancy mode.
     cursor = "",
@@ -46,14 +33,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "gen740/SmoothCursor.nvim",
-    --lazy = false,
-    cmd = cmds,
-    event = "BufEnter",
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require('smoothcursor').setup(opts)

@@ -1,18 +1,3 @@
----@type table
-local cmds = {
-    "Noice",
-    "NoiceLast",
-    "NoiceDisable",
-}
-
----@type LazySpec[]
-local dependencies = {
-    "MunifTanjim/nui.nvim",
-    "rcarriga/nvim-notify",
-    --"hrsh7th/nvim-cmp",
-    { "iguanacucumber/magazine.nvim", name = "nvim-cmp" },
-}
-
 ---@type NoiceConfig
 local opts = {
     lsp = {
@@ -38,15 +23,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "folke/noice.nvim",
-    --lazy = false,
-    event = "VeryLazy",
-    cmd = cmds,
-    dependencies = dependencies,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("noice").setup(opts)

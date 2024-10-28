@@ -279,34 +279,73 @@ version = "scm"
 cmd = "Lspsaga"
 event = "LspAttach"
 
-# TODO:
-
 [plugins."lualine.nvim"]
 #git = "nvim-lualine/lualine.nvim"
 version = "scm"
 event = "BufEnter"
 
+[plugins."luminate.nvim"]
+git = "mei28/luminate.nvim"
+#event = "VeryLazy"
+config = true
+
 [plugins.luasnip]
 version = "2.3.0"
 
+[plugins."markdown-toggle.nvim"]
+git = "roodolv/markdown-toggle.nvim"
+ft = ["markdown", "markdown.mdx"]
+
 [plugins."markview.nvim"]
+git = "OXY2DEV/markview.nvim"
 version = "24.0.0"
-opt = true
+cmd = "Markview"
+event = "BufEnter"
 
 [plugins."mason.nvim"]
 version = "1.10.0"
 
+[plugins."mkdir.nvim"]
+git = "jghauser/mkdir.nvim"
+keys = { lhs = "w", mode = "c", desc = "You can mkdir -p" }
+config = true
+
+[plugins."moody.nvim"]
+git = "svampkorg/moody.nvim"
+event = ["ModeChanged", "BufWinEnter", "WinEnter"]
+
 [plugins.neogit]
+#git = "NeogitOrg/neogit"
 version = "1.0.0"
+cmd = "Neogit"
+
+[plugins."neominimap.nvim"]
+git = "Isrothy/neominimap.nvim"
+cmd = "Neominimap"
 
 [plugins."no-neck-pain.nvim"]
+#git = "shortcuts/no-neck-pain.nvim"
 version = "2.0.6"
+cmd = [
+  "NoNeckPain",
+  "NoNeckPainResize",
+  "NoNeckPainToggleLeftSide",
+  "NoNeckPainToggleRightSide",
+  "NoNeckPainWidthUp",
+  "NoNeckPainWidthDown",
+]
 
 [plugins."noice.nvim"]
+#git = "folke/noice.nvim"
 version = "4.5.2"
+cmd = [
+  "Noice",
+  "NoiceLast",
+  "NoiceDisable",
+]
+#event = "VeryLazy"
 
-[plugins."none-ls.nvim"]
-version = "scm"
+# TODO:
 
 [plugins."num-utils.nvim"]
 git = "mimikun/num-utils.nvim"
@@ -338,6 +377,7 @@ version = "1.0.0"
 version = "scm"
 
 [plugins.nvim-notify]
+#git = "rcarriga/nvim-notify"
 version = "3.14.0"
 
 [plugins.nvim-surround]
@@ -371,11 +411,37 @@ version = "5.13.0"
 [plugins."screenkey.nvim"]
 version = "2.2.1"
 
+[plugins."sidebar.nvim"]
+git = "sidebar-nvim/sidebar.nvim"
+cmd = [
+    "SidebarNvimToggle",
+    "SidebarNvimClose",
+    "SidebarNvimOpen",
+    "SidebarNvimUpdate",
+    "SidebarNvimResize",
+    "SidebarNvimFocus",
+]
+event = "BufEnter"
+
 [plugins."smart-open.nvim"]
+#git = "danielfalk/smart-open.nvim"
 version = "scm"
 
 [plugins."smoothcursor.nvim"]
+#git = "gen740/SmoothCursor.nvim"
 version = "scm"
+cmd = [
+  "SmoothCursorStart",
+  "SmoothCursorStop",
+  "SmoothCursorStatus",
+  "SmoothCursorToggle",
+  "SmoothCursorFancyToggle",
+  "SmoothCursorFancyOn",
+  "SmoothCursorFancyOff",
+  "SmoothCursorDeleteSigns",
+  "SmoothCursorJump",
+]
+event = "BufEnter"
 
 [plugins."sqlite.lua"]
 #git = "kkharji/sqlite.lua"
@@ -385,6 +451,10 @@ version = "1.2.2"
 #git = "nvim-telescope/telescope.nvim"
 version = "scm"
 cmd = "Telescope"
+
+[plugins."telescope-fzf-native.nvim"]
+git = "nvim-telescope/telescope-fzf-native.nvim"
+build = "make"
 
 [plugins."todo-comments.nvim"]
 #git = "folke/todo-comments.nvim"
@@ -536,4 +606,6 @@ ft = "ttl"
 [plugins."vimdoc-ja"]
 git = "vim-jp/vimdoc-ja"
 keys = { lhs = "h", mode = "c", desc = "open [H]elp" }
+
+#-------------------------------------------------------------------------
 

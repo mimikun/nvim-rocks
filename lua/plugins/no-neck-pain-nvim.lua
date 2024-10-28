@@ -1,14 +1,4 @@
 ---@type table
-local cmds = {
-    "NoNeckPain",
-    "NoNeckPainResize",
-    "NoNeckPainToggleLeftSide",
-    "NoNeckPainToggleRightSide",
-    "NoNeckPainWidthUp",
-    "NoNeckPainWidthDown",
-}
-
----@type table
 local opts = {
     integrations = {
         --- @type table
@@ -20,13 +10,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "shortcuts/no-neck-pain.nvim",
-    --lazy = false,
-    cmd = cmds,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("no-neck-pain").setup(opts)
