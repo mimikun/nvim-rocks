@@ -1,12 +1,6 @@
----@type LazySpec
-local spec = {
-    "JoosepAlviste/nvim-ts-context-commentstring",
-    --lazy = false,
-    opts = {
-        enable_autocmd = false,
-    },
-    --cond = false,
-    --enabled = false,
+---@type table
+local opts = {
+    enable_autocmd = false,
 }
 
-return spec
+require('ts_context_commentstring').setup(opts)

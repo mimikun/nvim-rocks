@@ -21,14 +21,4 @@ local opts = {
     hide_unstable_versions = false,
 }
 
----@type LazySpec
-local spec = {
-    "vuki656/package-info.nvim",
-    --lazy = false,
-    event = { "BufRead package.json" },
-    dependencies = { "MunifTanjim/nui.nvim" },
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("package-info").setup(opts)

@@ -1,33 +1,94 @@
----@type LazySpec[]
-local dependencies = {
-    "nvim-treesitter/nvim-treesitter",
-    "nvim-tree/nvim-web-devicons",
-}
+vim.treesitter.language.register("markdown", "vimwiki")
 
 ---@type table
-local opts = require("plugins.configs.render-markdown-nvim.opts")
-
----@type LazySpec
-local spec = {
-    "MeanderingProgrammer/render-markdown.nvim",
-    --lazy = false,
-    ft = { "markdown", "vimwiki" },
-    cmd = "RenderMarkdown",
-    event = "BufEnter",
-    dependencies = dependencies,
-    init = function()
-        vim.treesitter.language.register("markdown", "vimwiki")
-    end,
-    config = function()
-        local rm = require("render-markdown")
-
-        rm.setup(opts)
-
-        -- default off
-        rm.disable()
-    end,
-    --cond = false,
-    --enabled = false,
+local opts = {
+    file_types = { "markdown", "vimwiki" },
+    anti_conceal = {
+        -- This enables hiding any added text on the line the cursor is on
+        -- This does have a performance penalty as we must listen to the 'CursorMoved' event
+        enabled = true,
+    },
+    latex = {
+        enabled = require("config.global").is_windows and false or true,
+    },
+    heading = {
+        icons = { "󰲡 ", "󰲣 ", "󰲥 ", "󰲧 ", "󰲩 ", "󰲫 " },
+        signs = { "󰫎 " },
+    },
+    code = {
+        above = "▄",
+        below = "▀",
+    },
+    dash = {
+        icon = "─",
+    },
+    bullet = {
+        icons = { "●", "○", "◆", "◇" },
+    },
+    checkbox = {
+        unchecked = {
+            icon = "󰄱 ",
+        },
+        checked = {
+            icon = "󰱒 ",
+        },
+        custom = {
+            todo = {
+                rendered = "󰥔 ",
+            },
+        },
+    },
+    quote = {
+        icon = "▋",
+        repeat_linebreak = false,
+    },
+    pipe_table = {
+        alignment_indicator = "━",
+        border = {
+            "┌",
+            "┬",
+            "┐",
+            "├",
+            "┼",
+            "┤",
+            "└",
+            "┴",
+            "┘",
+            "│",
+            "─",
+        },
+    },
+    callout = {
+        note = { rendered = "󰋽 Note" },
+        tip = { rendered = "󰌶 Tip" },
+        important = { rendered = "󰅾 Important" },
+        warning = { rendered = "󰀪 Warning" },
+        caution = { rendered = "󰳦 Caution" },
+        -- Obsidian: https://help.a.md/Editing+and+formatting/Callouts
+        abstract = { rendered = "󰨸 Abstract" },
+        todo = { rendered = "󰗡 Todo" },
+        success = { rendered = "󰄬 Success" },
+        question = { rendered = "󰘥 Question" },
+        failure = { rendered = "󰅖 Failure" },
+        danger = { rendered = "󱐌 Danger" },
+        bug = { rendered = "󰨰 Bug" },
+        example = { rendered = "󰉹 Example" },
+        quote = { rendered = "󱆨 Quote" },
+    },
+    link = {
+        image = "󰥶 ",
+        hyperlink = "󰌹 ",
+        custom = {
+            web = {
+                icon = "󰖟 ",
+            },
+        },
+    },
 }
 
-return spec
+local rm = require("render-markdown")
+
+rm.setup(opts)
+
+-- default off
+rm.disable()

@@ -36,13 +36,4 @@ local opts = {
     depth_limit = 9,
 }
 
----@type LazySpec
-local spec = {
-    "SmiteshP/nvim-navic",
-    --lazy = false,
-    dependencies = { "neovim/nvim-lspconfig" },
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("navic").setup(opts)

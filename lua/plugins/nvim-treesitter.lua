@@ -1,25 +1,7 @@
 local global = require("config.global")
 
----@type LazySpec[]
-local dependencies = {
-    "windwp/nvim-ts-autotag",
-    "LhKipp/nvim-nu",
-    "RRethy/nvim-treesitter-textsubjects",
-}
 
----@type LazySpec
-local spec = {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    --lazy = false,
-    event = "VeryLazy",
-    dependencies = dependencies,
-    init = function()
         vim.opt.runtimepath:prepend(global.parser_install_dir)
-    end,
-    config = function()
-        require("nu").setup({})
-        require("nvim-ts-autotag").setup({})
 
         require("nvim-treesitter.configs").setup({
             parser_install_dir = global.parser_install_dir,
@@ -46,8 +28,3 @@ local spec = {
                 },
             },
         })
-    end,
-    --cond = false,
-}
-
-return spec

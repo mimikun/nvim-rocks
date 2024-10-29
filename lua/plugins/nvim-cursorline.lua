@@ -12,12 +12,4 @@ local opts = {
     },
 }
 
----@type LazySpec
-local spec = {
-    "yamatsum/nvim-cursorline",
-    --lazy = false,
-    opts = opts,
-    --cond = false,
-}
-
-return spec
+require("nvim-cursorline").setup(opts)

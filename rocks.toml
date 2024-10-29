@@ -17,15 +17,28 @@ nvim-web-devicons = "0.100"
 "mini.icons" = "0.14.0"
 "nui.nvim" = "0.3.0"
 "toggleterm.nvim" = "2.12.0"
+neorg = "9.1.1"
+
+[plugins.nvim-treesitter-textobjects]
+#version = "scm"
+git = "RRethy/nvim-treesitter-textsubjects"
+
+[plugins.nvim-nu]
+git = "LhKipp/nvim-nu"
+
+[plugins.nvim-ts-autotag]
+#git = "windwp/nvim-ts-autotag"
+version = "scm"
+
+[plugins."nvim-ts-context-commentstring"]
+git = "JoosepAlviste/nvim-ts-context-commentstring"
+#version = "scm"
 
 [plugins."vim-toml"]
 git = "cespare/vim-toml"
 
 [plugins."vim-duckscript"]
 git = "nastevens/vim-duckscript"
-
-[plugins."nvim-ts-context-commentstring"]
-git = "JoosepAlviste/nvim-ts-context-commentstring"
 
 #---------------------------------------------
 
@@ -48,31 +61,31 @@ event = "VimEnter"
 git = "romgrk/barbar.nvim"
 event = "BufEnter"
 cmd = [
-    "BufferPrevious",
-    "BufferNext",
-    "BufferMovePrevious",
-    "BufferMoveNext",
-    "BufferGoto",
-    "BufferLast",
-    "BufferPin",
-    "BufferClose",
-    "BufferRestore",
-    "BufferWipeout",
-    "BufferCloseAllButCurrent",
-    "BufferCloseAllButVisible",
-    "BufferCloseAllButPinned",
-    "BufferCloseAllButCurrentOrPinned",
-    "BufferCloseBuffersLeft",
-    "BufferCloseBuffersRight",
-    "BufferPick",
-    "BufferPickDelete",
-    "BufferOrderByBufferNumber",
-    "BufferOrderByName",
-    "BufferOrderByDirectory",
-    "BufferOrderByLanguage",
-    "BufferOrderByWindowNumber",
-    "BarbarEnable",
-    "BarbarDisable",
+  "BufferPrevious",
+  "BufferNext",
+  "BufferMovePrevious",
+  "BufferMoveNext",
+  "BufferGoto",
+  "BufferLast",
+  "BufferPin",
+  "BufferClose",
+  "BufferRestore",
+  "BufferWipeout",
+  "BufferCloseAllButCurrent",
+  "BufferCloseAllButVisible",
+  "BufferCloseAllButPinned",
+  "BufferCloseAllButCurrentOrPinned",
+  "BufferCloseBuffersLeft",
+  "BufferCloseBuffersRight",
+  "BufferPick",
+  "BufferPickDelete",
+  "BufferOrderByBufferNumber",
+  "BufferOrderByName",
+  "BufferOrderByDirectory",
+  "BufferOrderByLanguage",
+  "BufferOrderByWindowNumber",
+  "BarbarEnable",
+  "BarbarDisable",
 ]
 
 [plugins."buffer-reopen.nvim"]
@@ -157,6 +170,7 @@ cmd = [
 git = "zeioth/garbage-day.nvim"
 #event = "VeryLazy"
 config = true
+opt = true
 
 [plugins."gitgraph.nvim"]
 git = "isakbm/gitgraph.nvim"
@@ -216,7 +230,7 @@ version = "scm"
 
 [plugins."human-rights.nvim"]
 git = "mimikun/human-rights.nvim"
-dev = true
+#dev = true
 cmd = [
   "ShowCpu",
   "ShowMemory",
@@ -225,8 +239,8 @@ cmd = [
 ]
 
 [plugins."indent-blankline.nvim"]
-#git = "lukas-reineke/indent-blankline.nvim"
-version = "3.8.2"
+git = "lukas-reineke/indent-blankline.nvim"
+#version = "3.8.2"
 cmd = [
   "IBLEnable",
   "IBLDisable",
@@ -361,9 +375,18 @@ version = "scm"
 event = "InsertEnter"
 
 [plugins.nvim-bqf]
+#git = "kevinhwang91/nvim-bqf"
 version = "1.1.1"
+ft = "qf"
+cmd = [
+  "BqfEnable",
+  "BqfDisable",
+  "BqfToggle",
+  "BqfAutoToggle",
+]
 
 [plugins.nvim-cursorline]
+#git = "yamatsum/nvim-cursorline"
 version = "scm"
 
 [plugins.nvim-dap-ui]
@@ -372,9 +395,14 @@ version = "4.0.0"
 [plugins.nvim-lspconfig]
 version = "1.0.0"
 
+[plugins."nvim-navbuddy"]
+git = "SmiteshP/nvim-navbuddy"
+cmd = "Navbuddy"
+
 [plugins.nvim-navic]
 #git = "SmiteshP/nvim-navic"
 version = "scm"
+opt = true
 
 [plugins.nvim-notify]
 #git = "rcarriga/nvim-notify"
@@ -386,30 +414,85 @@ version = "2.1.5"
 [plugins."nvim-tree.lua"]
 version = "1.6.0"
 
+[plugins.nvim-treesitter]
+git = "nvim-treesitter/nvim-treesitter"
+#version = "scm"
+build = ":TSUpdate"
+#event = "VeryLazy"
+
 [plugins."obsidian.nvim"]
 version = "3.9.0"
 
 [plugins."octo.nvim"]
+#"pwntester/octo.nvim"
 version = "scm"
+cmd = "Octo"
+
+[plugins."oil-git-status.nvim"]
+git = "refractalize/oil-git-status.nvim"
+ft = "oil"
+config = true
 
 [plugins."oil.nvim"]
+#git = "stevearc/oil.nvim"
 version = "2.12.2"
+cmd = "Oil"
 
 [plugins."overseer.nvim"]
+#"stevearc/overseer.nvim"
 version = "1.4.0"
+cmd = [
+  "OverseerOpen",
+  "OverseerClose",
+  "OverseerToggle",
+  "OverseerSaveBundle",
+  "OverseerLoadBundle",
+  "OverseerDeleteBundle",
+  "OverseerRunCmd",
+  "OverseerRun",
+  "OverseerInfo",
+  "OverseerBuild",
+  "OverseerQuickAction",
+  "OverseerTaskAction",
+  "OverseerClearCache",
+]
+config = true
 
 [plugins."package-info.nvim"]
+#git = "vuki656/package-info.nvim"
+event = "BufRead package.json"
 version = "2.0"
 
 [plugins."render-markdown.nvim"]
+#git = "MeanderingProgrammer/render-markdown.nvim"
 version = "7.4.0"
-opt = true
+ft = ["markdown", "vimwiki"]
+cmd = "RenderMarkdown"
+event = "BufEnter"
 
 [plugins.rustaceanvim]
+#git = "mrcjkb/rustaceanvim"
 version = "5.13.0"
+cmds = [
+  "RustAnalyzer",
+  "Rustc",
+  "RustLsp",
+]
+config = true
+
+[plugins."satellite.nvim"]
+git = "lewis6991/satellite.nvim"
+cmd = [
+  "SatelliteEnable",
+  "SatelliteDisable",
+  "SatelliteRefresh",
+]
+event = "VimEnter"
 
 [plugins."screenkey.nvim"]
+#git = "NStefan002/screenkey.nvim"
 version = "2.2.1"
+cmd = "Screenkey"
 
 [plugins."sidebar.nvim"]
 git = "sidebar-nvim/sidebar.nvim"

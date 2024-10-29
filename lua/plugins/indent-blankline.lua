@@ -56,4 +56,4 @@ local opts = {
     },
 }
 
-require("indent_blankline").setup(opts)
+require("ibl").setup(opts)
